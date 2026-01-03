@@ -26,3 +26,50 @@ Ports: 1-10000
 └──────┴────────┴─────────┘
 
 Scan completed. Report saved to output/scan_result.json
+
+🛠️ Step-by-Step Installation
+1️⃣ Clone the Repository
+git clone https://github.com/cyberrockyroom/RockyScan.git
+cd RockyScan
+
+2️⃣ Create a Python Virtual Environment (Recommended)
+python3 -m venv venv
+
+
+Activate the virtual environment:
+
+source venv/bin/activate
+
+3️⃣ Install Required Dependencies
+pip install -r requirements.txt
+
+4️⃣ Make the Script Executable
+chmod +x main.py
+
+5️⃣ Install RockyScan as a System-Wide Command (Optional but Recommended)
+
+This allows you to run RockyScan like nmap from anywhere in the terminal.
+
+sudo ln -s $(pwd)/main.py /usr/local/bin/rockyscan
+
+
+Verify installation:
+
+rockyscan --help
+
+▶️ Usage
+🔹 Basic Scan
+rockyscan <target-ip>
+
+
+Example:
+
+rockyscan 192.168.1.10
+
+🔹 Scan with Custom Port Range
+rockyscan <target-ip> -p 1-10000
+
+
+Example:
+
+rockyscan 192.168.1.10 -p 1-10000
