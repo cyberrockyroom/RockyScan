@@ -1,4 +1,1 @@
-os
-sys
 rich
-colorama
