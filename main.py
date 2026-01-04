@@ -9,7 +9,7 @@ from rich.console import Console
 from rich.table import Table
 from core.port_scanner import scan_ports
 
-console = Console()
+console = Console(width=120)
 
 BANNER = r"""
 ██████╗  ██████╗  ██████╗██╗  ██╗██╗   ██╗███████╗ ██████╗ █████╗ ███╗   ██╗
