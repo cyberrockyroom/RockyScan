@@ -14,7 +14,7 @@ RockyScan – CLI Network Security Scanner
 Author: Rocky Patel
 Version: 1.0
 
-Target: 192.168.252.137
+Target: 192.168.1.10
 Ports: 1-10000
 
 ┏━━━━━━┳━━━━━━━━┳━━━━━━━━━┓
