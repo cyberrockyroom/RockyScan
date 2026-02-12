@@ -1,4 +1,12 @@
-venv/
+# Python cache
 __pycache__/
 *.pyc
+
+# Virtual environment
+venv/
+
+# Editable install artifacts
+*.egg-info/
+
+# Output files
 output/
