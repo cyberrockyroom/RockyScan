@@ -18,6 +18,7 @@ RockyScan is a **unified, interactive Linux CLI network scanning framework** tha
   - Unicornscan
   - Angry IP Scanner
   - Fscan
+  - If you use all the tools you can install tools for your system(ex. sudo apt install nmap) 
 - 🐧 Works on Kali Linux & other Linux distros
 
 ---
