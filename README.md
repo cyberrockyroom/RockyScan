@@ -34,10 +34,11 @@ RockyScan is a **unified, interactive Linux CLI network scanning framework** tha
 
 This method allows using `rockyscan` **without activating any virtual environment**.
 
-### 🔹 Step 1: Install `pipx`
+### 🔹How to Install and run
 ```bash
 sudo apt update
 git clone git clone https://github.com/cyberrockyroom/RockyScan.git
 cd RockyScan
 sudo apt install pipx -y
 pipx ensurepath
+rockyscan
