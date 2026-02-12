@@ -28,7 +28,7 @@ RockyScan is a **unified, interactive Linux CLI network scanning framework** tha
 
 ## 📸 Screenshot
 
-![RockyScan CLI]([screenshots/rockyscan.png])
+![RockyScan CLI](screenshots/rockyscan.png)
 
 > Screenshot showing the RockyScan banner and interactive menu.
 
