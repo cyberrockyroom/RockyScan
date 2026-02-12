@@ -1,81 +1,45 @@
-## 📸 Tool Demo (Live Scan Output)
+# 🚀 RockyScan
 
-Below is a real execution output of **RockyScan** running on a local network target:
+RockyScan is a **unified, interactive Linux CLI network scanning framework** that combines a built-in Python port scanner with wrappers for popular security tools like Nmap, Masscan, Naabu, and more — all accessible from a single interface.
 
-```text
-██████╗  ██████╗  ██████╗██╗  ██╗██╗   ██╗███████╗ ██████╗ █████╗ ███╗   ██╗
-██╔══██╗██╔═══██╗██╔════╝██║ ██╔╝╚██╗ ██╔╝██╔════╝██╔════╝██╔══██╗████╗  ██║
-██████╔╝██║   ██║██║     █████╔╝  ╚████╔╝ ███████╗██║     ███████║██╔██╗ ██║
-██╔══██╗██║   ██║██║     ██╔═██╗   ╚██╔╝  ╚════██║██║     ██╔══██║██║╚██╗██║
-██║  ██║╚██████╔╝╚██████╗██║  ██╗   ██║   ███████║╚██████╗██║  ██║██║ ╚████║
-╚═╝  ╚═╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚══════╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═══╝
+---
 
-RockyScan – CLI Network Security Scanner
-Author: Rocky Patel
-Version: 1.0
+## ✨ Features
 
-Target: 192.168.1.10
-Ports: 1-10000
+- 🎛 Interactive menu-based Linux CLI
+- 🌈 Cyber-style colorful banner
+- 🧠 Built-in Python port scanner (RockyScan Engine)
+- 🔗 Wrapper for popular tools:
+  - Nmap
+  - Masscan
+  - RustScan
+  - Naabu
+  - Netcat
+  - Hping3
+  - Unicornscan
+  - Angry IP Scanner
+  - Fscan
+- 📌 Beginner-friendly examples for every tool
+- 📄 JSON report generation
+- 🔄 Switch tools without restarting
+- 🐧 Works on Kali Linux & other Linux distros
 
-┏━━━━━━┳━━━━━━━━┳━━━━━━━━━┓
-┃ Port ┃ Status ┃ Service ┃
-┡━━━━━━╇━━━━━━━━╇━━━━━━━━━┩
-│  22  │  OPEN  │   SSH   │
-│ 1716 │  OPEN  │ UNKNOWN │
-│ 9090 │  OPEN  │ UNKNOWN │
-└──────┴────────┴─────────┘
+---
 
-Scan completed. Report saved to output/scan_result.json
+## 📸 Screenshot
 
-🛠️ Step-by-Step Installation
-1️⃣ Clone the Repository
+![RockyScan CLI]([screenshots/rockyscan.png])
 
-git clone https://github.com/cyberrockyroom/RockyScan.git
-cd RockyScan
+> Screenshot showing the RockyScan banner and interactive menu.
 
-2️⃣ Create a Python Virtual Environment (Recommended)
+---
 
-python3 -m venv venv
+## 📦 Installation (Recommended – Normal Linux CLI)
 
+This method allows using `rockyscan` **without activating any virtual environment**.
 
-Activate the virtual environment:
-
-source venv/bin/activate
-
-3️⃣ Install Required Dependencies
-
-pip install -r requirements.txt
-
-4️⃣ Make the Script Executable
-
-chmod +x main.py
-
-5️⃣ Install RockyScan as a System-Wide Command (Optional but Recommended)
-
-This allows you to run RockyScan like nmap from anywhere in the terminal.
-
-sudo ln -s $(pwd)/main.py /usr/local/bin/rockyscan
-
-
-Verify installation:
-
-rockyscan --help
-
-▶️ Usage
-🔹 Basic Scan
-
-rockyscan <target-ip>
-
-
-Example:
-
-rockyscan 192.168.1.10
-
-🔹 Scan with Custom Port Range
-
-rockyscan <target-ip> -p 1-10000
-
-
-Example:
-
-rockyscan 192.168.1.10 -p 1-10000
+### 🔹 Step 1: Install `pipx`
+```bash
+sudo apt update
+sudo apt install pipx -y
+pipx ensurepath
