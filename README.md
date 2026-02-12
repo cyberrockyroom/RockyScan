@@ -7,7 +7,6 @@ RockyScan is a **unified, interactive Linux CLI network scanning framework** tha
 ## ✨ Features
 
 - 🎛 Interactive menu-based Linux CLI
-- 🌈 Cyber-style colorful banner
 - 🧠 Built-in Python port scanner (RockyScan Engine)
 - 🔗 Wrapper for popular tools:
   - Nmap
@@ -19,9 +18,6 @@ RockyScan is a **unified, interactive Linux CLI network scanning framework** tha
   - Unicornscan
   - Angry IP Scanner
   - Fscan
-- 📌 Beginner-friendly examples for every tool
-- 📄 JSON report generation
-- 🔄 Switch tools without restarting
 - 🐧 Works on Kali Linux & other Linux distros
 
 ---
@@ -41,5 +37,7 @@ This method allows using `rockyscan` **without activating any virtual environmen
 ### 🔹 Step 1: Install `pipx`
 ```bash
 sudo apt update
+git clone git clone https://github.com/cyberrockyroom/RockyScan.git
+cd RockyScan
 sudo apt install pipx -y
 pipx ensurepath
