@@ -42,4 +42,6 @@ git clone git clone https://github.com/cyberrockyroom/RockyScan.git
 cd RockyScan
 sudo apt install pipx -y
 pipx ensurepath
+pipx install .
+pipx uninstall rockyscan && pipx install . (if rockyscan command not work so use this one)
 rockyscan
